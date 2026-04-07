@@ -1,0 +1,54 @@
+$ErrorActionPreference = 'Stop'
+$base = 'https://media.githubusercontent.com/media/harrietwong/pinterest-videos/refs/heads/main/'
+$sourceDir = 'D:\PinterestRepo'
+$outputFolder = 'D:\PinterestRepo\link'
+$outputPath = Join-Path $outputFolder 'Media_Links.csv'
+
+Write-Host "======================================"
+Write-Host "3. 正在生成 GitHub 媒体直链与同名匹配 CSV"
+Write-Host "======================================"
+Write-Host ""
+
+if (-not (Test-Path $outputFolder)) {
+    New-Item -ItemType Directory -Path $outputFolder | Out-Null
+}
+
+$files = Get-ChildItem -Path $sourceDir -File
+$vids = $files | Where-Object { $_.Extension -match '(?i)\.(mp4|mov|avi|mkv|webm)$' }
+$imgs = $files | Where-Object { $_.Extension -match '(?i)\.(jpg|jpeg|png|gif|webp)$' }
+$processedImgs = @()
+$rows = @()
+
+foreach ($v in $vids) {
+    $bn = $v.BaseName
+    $vEnc = [System.Uri]::EscapeDataString($v.Name).Replace('%28', '(').Replace('%29', ')')
+    $vUrl = $base + $vEnc
+
+    $match = $imgs | Where-Object { $_.BaseName -eq $bn -or $_.BaseName -eq ($bn + '-cover') } | Select-Object -First 1
+    $tUrl = ''
+    if ($match) {
+        $iEnc = [System.Uri]::EscapeDataString($match.Name).Replace('%28', '(').Replace('%29', ')')
+        $tUrl = $base + $iEnc
+        $processedImgs += $match.FullName
+    }
+    $rows += [PSCustomObject]@{ 'Title' = $bn; 'Media URL' = $vUrl; 'Thumbnail' = $tUrl }
+}
+
+foreach ($i in $imgs) {
+    if ($processedImgs -notcontains $i.FullName) {
+        $bn = $i.BaseName
+        $iEnc = [System.Uri]::EscapeDataString($i.Name).Replace('%28', '(').Replace('%29', ')')
+        $iUrl = $base + $iEnc
+        $rows += [PSCustomObject]@{ 'Title' = $bn; 'Media URL' = ''; 'Thumbnail' = $iUrl }
+    }
+}
+
+if ($rows.Count -gt 0) {
+    $rows | Export-Csv -Path $outputPath -NoTypeInformation -Encoding UTF8
+    Write-Host "✅ 成功！生成了 $($rows.Count) 行数据，已保存到 $outputPath" -ForegroundColor Green
+} else {
+    Write-Host "⚠️ 在 D:\PinterestRepo 下没有找到任何视频或图片。" -ForegroundColor Yellow
+}
+
+Write-Host ""
+Read-Host "按回车键退出..."

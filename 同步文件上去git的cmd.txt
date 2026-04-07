@@ -1,0 +1,1 @@
+cd /d D:\PinterestRepo && git add . && git commit -m "Auto upload media" && git push origin main
