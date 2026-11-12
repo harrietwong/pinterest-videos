@@ -1,0 +1,18 @@
+﻿款,判定,标题,链接,ASIN或ID,品牌或账号,价格,评分,评论数,销量,主图是否对上截图,备注
+款,判定,标题,链接,ASIN或ID,品牌或账号,价格,评分,评论数,销量,主图是否对上截图,备注
+瓶形,极近,"Natural Alabaster Bottle Table Lamp, Rechargeable Cordless Nightstand Lamp",https://www.amazon.com/dp/B0HJTTDVGW,B0HJTTDVGW,VYORO,$228.99,,,,瓶形、金属盖和金属底对得上；单只，颜色偏乳白，不是 HAOLIDA,亚马逊商品页没有评分、评论数和 bought in past month
+瓶形,仅品类相近,"Amber Onyx Table Lamp Rechargeable, Touch Dimmable Cordless Bedside Lamp",https://www.amazon.com/dp/B0H6J55JWM,B0H6J55JWM,TSJKPAYL,$43.99,4.5/5,2,,圆柱，不是瓶子,页面没有近30天购买量
+瓶形,仅品类相近,"Marble Table Lamp – Honey Onyx, Side Touch, Cordless, Type-C",https://www.amazon.com/dp/B0HD7749ZM,B0HD7749ZM,ShineMuse,$43.99,4.2/5,17,50+ bought in past month,圆角方块,发光云石材质相近
+瓶形,仅品类相近,"Alabaster Table Lamp for Living Room, 3-Way Dimmable Table Lamp",https://www.amazon.com/dp/B0FXKR8HZ2,B0FXKR8HZ2,Scenekoy,$69.99,4.7/5,338,,长方灯罩,不是瓶形
+瓶形,不是同款,HAOLIDA / Haolida 品牌搜索第一页,https://www.amazon.com/s?k=HAOLIDA+lamp,,,,,,,,第一页没有 Haolida 瓶灯，出现的是圣诞投影灯和 Tiffany 台灯
+蛋形,极近,"Natural Marble Egg Lamp with Travertine Base, Marble Touch Lamp",https://www.amazon.com/dp/B0GZWPVXD2,B0GZWPVXD2,JYCT,$19.99,2.9/5,4,,蛋形发光石，洞石圆柱底座,不是截图里的深色金属底座，不是 HAOLIDA
+蛋形,极近,SMQ Citrine Crystal Night Light Handmade Polished Natural Egg-Shaped Stone,https://www.amazon.com/dp/B0H211HC8W,B0H211HC8W,SMQ,$29.99,4.5/5,2,,蛋形，木底座,页面没有近30天购买量
+蛋形,极近,"Natural Marble Egg-Shaped Table Lamp, USB Rechargeable Touch Bedside Lamp",https://www.amazon.com/dp/B0H23P93FM,B0H23P93FM,Reitinna,$68.99,3.6/5,24,,整只蛋，无单独深色金属底座,页面没有近30天购买量
+蛋形,仅品类相近,"Marble Table Lamp – Cloud Stone, Side Touch, Cordless, Type-C",https://www.amazon.com/dp/B0HD7FB35K,B0HD7FB35K,ShineMuse,$49.99,4.2/5,17,,矮圆柱,不是蛋形
+蛋形,仅品类相近,Marmor Marble Lamp Table Lamp Unique Stone Touch Lamp,https://www.amazon.com/dp/B0GRMYW869,B0GRMYW869,Marmor,$48.99,3.2/5,71,,条纹矮圆柱,
+蛋形,仅品类相近,Marble Lamp Luxury Stone Table Lamp Type-C Rechargeable Touch Night Light,https://www.amazon.com/dp/B0H1QK2WGL,B0H1QK2WGL,PanManner,$49.99,3.0/5,58,,方块,
+蛋形,仅品类相近,"Natural Alabaster Night Light, Touch Control Small Bedside Lamp",https://www.amazon.com/dp/B0H586T18W,B0H586T18W,PLIXYRCPL,$44.99,3.6/5,16,,小圆柱,
+两款,TikTok Shop 未打开到结果,,https://shop.tiktok.com/us,,,,,,,,首页为滑动验证；/us/search/result 返回 404；tiktok.com/search/video 只有空白骨架
+瓶形,Instagram 未确认同造型,Visual Comfort cordless alabaster lamp,https://www.instagram.com/reel/DAEV1BZPOz3/,,ashbluenashville,,,,,封面是布灯罩充电头,登出 oEmbed 无播放、点赞、评论
+瓶形,Instagram 未确认同造型,AERIN alabaster cordless lamps,https://www.instagram.com/reel/DJ2xZBeOP8R/,,juliaberolzheimer,,,,,封面是白灯罩台灯的客厅,登出无播放量
+瓶形,Instagram 未确认同造型,Onyx Table Lamp dual-charging,https://www.instagram.com/reel/C0g7s4vubpv/,,arkansaslighting,,,,,方形石座加布灯罩,登出无播放量
